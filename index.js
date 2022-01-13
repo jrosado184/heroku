@@ -3,8 +3,8 @@ const express = require("express");
 
 const app = express();
 
-app.get("/", (req, res) => {
-  console.log(process.env.USERDOMAIN);
+app.get("/hello", (req, res) => {
+  res.send("<h1>Hello<h1/>");
 });
 
 const port = process.env.PORT || 9000;
